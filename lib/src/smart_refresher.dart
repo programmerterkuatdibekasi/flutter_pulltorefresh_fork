@@ -344,10 +344,10 @@ class SmartRefresherState extends State<SmartRefresher> {
             dragSpeedRatio: conf?.dragSpeedRatio ?? 1,
             springDescription: conf?.springDescription ??
                 const SpringDescription(
-                  mass: 2.2,
-                  stiffness: 150,
-                  damping: 16,
-                ),
+              mass: 1,
+              stiffness: 364.718677686,
+              damping: 35.2,
+            ),
             controller: widget.controller,
             enableScrollWhenTwoLevel: conf?.enableScrollWhenTwoLevel ?? true,
             updateFlag: _updatePhysics ? 0 : 1,
@@ -911,9 +911,9 @@ class RefreshConfiguration extends InheritedWidget {
       this.enableLoadingWhenNoData: false,
       this.enableBallisticRefresh: false,
       this.springDescription: const SpringDescription(
-        mass: 2.2,
-        stiffness: 150,
-        damping: 16,
+        mass: 1,
+        stiffness: 364.718677686,
+        damping: 35.2,
       ),
       this.enableScrollWhenRefreshCompleted: false,
       this.enableLoadingWhenFailed: true,
